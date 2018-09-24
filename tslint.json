@@ -1,0 +1,31 @@
+{
+  "rules": {
+    "class-name": true,
+    "comment-format": [
+      true,
+      "check-space"
+    ],
+    "no-duplicate-variable": true,
+    "no-eval": true,
+    "no-internal-module": true,
+    "no-var-keyword": true,
+    "no-console": false,
+    "triple-equals": [
+      true,
+      "allow-null-check"
+    ],
+    "variable-name": [
+      true,
+      "ban-keywords"
+    ],
+    "member-access": [
+      false,
+      "check-accessor"
+    ],
+    "no-implicit-dependencies": [true, "dev"]
+  },
+  "extends": [
+    "tslint:latest",
+    "tslint-config-prettier"
+  ]
+}
