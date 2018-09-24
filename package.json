@@ -55,7 +55,6 @@
     "@types/passport-jwt": "^3.0.1",
     "casual": "^1.5.19",
     "chai": "^4.1.2",
-    "fork-ts-checker-webpack-plugin": "^0.4.9",
     "fs": "0.0.1-security",
     "graphql-playground-middleware-express": "^1.7.1",
     "graphql-tester": "0.0.5",
