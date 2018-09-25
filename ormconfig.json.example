@@ -1,0 +1,11 @@
+{
+  "name": "default",
+  "type": "sqlite",
+  "database": "db.sqlite3",
+  "logger": "advanced-console",
+  "logging": "all",
+  "cache": true,
+  "entities": [
+    "src/models/**/*.ts"
+  ]
+}
