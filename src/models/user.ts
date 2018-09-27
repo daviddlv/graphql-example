@@ -43,9 +43,11 @@ export class User {
   @Field(type => String)
   lastName: string;
 
+  /*
   @Column('json')
   @Field(type => [String])
   roles: string[] = [];
+  */
 
   @CreateDateColumn()
   @Field(type => Date)

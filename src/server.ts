@@ -28,7 +28,7 @@ export async function setupGraphQLServer() {
   app.use(morgan('combined'));
   app.use(errorHandler());
 
-  const schema = await getSchema();
+  const schema = getSchema();
   app.use('/schema', (req, res, _next) => {
     res.set('Content-Type', 'text/plain');
     res.send(printSchema(schema));

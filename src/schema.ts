@@ -1,10 +1,11 @@
-import { buildSchema, BuildSchemaOptions } from 'type-graphql';
+import { GraphQLSchema } from 'graphql';
+import { BuildSchemaOptions, buildSchemaSync } from 'type-graphql';
 
-export async function getSchema() {
+export function getSchema(): GraphQLSchema {
   const options: BuildSchemaOptions = {
     dateScalarMode: 'isoDate',
     resolvers: [__dirname + '/resolvers/**/*.ts', __dirname + '/subscriptions/**/*.ts']
   };
 
-  return buildSchema(options);
+  return buildSchemaSync(options);
 }

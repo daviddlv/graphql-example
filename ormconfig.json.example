@@ -6,6 +6,6 @@
   "logging": "all",
   "cache": true,
   "entities": [
-    "src/models/**/*.ts"
+    "dist/models/**/*.js"
   ]
 }
